@@ -1,8 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,33 +22,121 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+/* End of Reset */
+/* Start of Custom Styles */
+.content {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 970px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/* Navigation Section */
+.top-navigation {
+    background-color: #fff;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+.top-navigation > .content {
+    height: 70px;
+}
+.top-navigation .logo {
+    height: 70px;
+    margin-left: 6rem;
+}
+.top-navigation .links {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
+    margin-right:5rem;
+    -webkit-font-smoothing: antialiased;
+}
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.top-navigation .links li.active {
+    display: inline-block;
+    margin-left: 25px;
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links ul{
+	  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+.top-navigation .links .active {
+    color: #4c5058;
+    font-weight: 500;
+}
+.top-navigation .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+.introduction {
+    background-image: url('../images/first-background.jpg');
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 39.938rem;
+    overflow: auto;
+    background-position: fixed;
+}
+button{
+	width: 9.688rem;
+  background-color: #f15a29;
+  border-color: #f15a29;
+  text-shadow: none;
+  border-style: none;
+  border-radius: 4px;
+  padding: 1rem 1.5rem;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  display: block;
+  margin: 0 auto;
+  margin-top:2rem;
+}
+button:hover{
+  background-color: #d9400e;
+  border-color: #cf3d0e;
+  cursor: pointer;
+}
+.introduction h1{
+	margin-top: 17.5rem;
+	text-align: center;
+  color: #fff;
+  font-size: 3.125rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+.introduction h3{
+  margin-top: 1.25rem;
+  text-align: center;
+  color: #fff;
+  font-size: 1.563rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: baseline;
 }
