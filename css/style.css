@@ -41,6 +41,7 @@ ol, ul {
     list-style: none;
 }
 /* End of Reset */
+
 /* Start of Custom Styles */
 .content {
     padding: 0 15px;
@@ -157,6 +158,7 @@ button:hover{
 	margin-top:2rem;
     width: 33.333%;
     float:left;
+    clear: none;
     /* styles to assist with debugging */
     box-sizing: border-box;
     height: 4rem;
@@ -165,4 +167,13 @@ button:hover{
   font-weight: 400;
   font-size: 1.563rem;
   margin: 2.5rem 0px 1.875rem;
+}
+.social {
+  background-color: #fff;
+  text-align: center;
+  display:block;
+  margin-top:25rem;
+}
+.social h5{
+	font-size: 1.5rem;
 }
